@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImagetoText</string>
+    <string name="trim">Trim</string>
+    <string name="heading2">Select the parts which have been previosly been repaired /repainted</string>
+    <string name="roof">Roof</string>
+    <string name="bonnet">Bonnet</string>
+    <string name="bumperfront">Bumper (Front)</string>
+    <string name="bumperrear">Bumper (Rear)</string>
+    <string name="fenderright">Fender (Right)</string>
+    <string name="fenderleft">Fender (Left)</string>
+    <string name="doorright">Door (Right)</string>
+    <string name="doorleft">Door (Left)</string>
+    <string name="please_Wait">please wait</string>
+    <string name="creating">Creating Report</string>
+    <string name="stepTwo">Fill The Following Questionaire as accurately as possible!</string>
+    <string name="generateReport">Note : You can generate the report from the report button on top of the Screen</string>
+</resources>

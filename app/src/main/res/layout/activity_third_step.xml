@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wasique.imagetotext.StepTwo"
+    android:orientation="vertical"
+    android:background="#d8d8d8"
+    >
+
+    <ImageButton
+        android:id="@+id/btnGeneratePDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout_Tax"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout_Tax"
+        android:layout_gravity="end"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle_btn"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_report"
+        />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <!--<Button-->
+            <!--android:id="@+id/btnStepThree"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Move to Step 3"-->
+            <!--android:layout_gravity="center"-->
+            <!--/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4482bb"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="20dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your car is"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textSize="22sp"
+                    android:id="@+id/companyName"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="car Name"
+                    android:textSize="22sp"
+                    android:id="@+id/carName"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_Tax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#1a58bb"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tax"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_Tax"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_ok" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_CPLC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout_Tax"
+                    android:layout_margin="10dp"
+                    android:background="#1a58bb"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="CPLC"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_CPLC"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_ok" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_Security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout_CPLC"
+                    android:layout_margin="10dp"
+                    android:background="#1a58bb"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Security"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_Security"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_cancel" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_Rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout_Security"
+                    android:layout_margin="10dp"
+                    android:background="#1a58bb"
+                    android:orientation="vertical"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/linearLayout_Security"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:text="Condition"
+                        android:textColor="#ffffff"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/Txt_Rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/linearLayout_Security"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:text="8/10"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Txt_TotalMileage"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:text="800000"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_editext"
+
+                />
+
+            <TextView
+                android:layout_below="@+id/relativeMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Txt_TotalPrice"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="PKR 920,000"
+                android:textSize="24dp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_editextgreen"
+
+                />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generateReport"
+                android:textSize="15sp"
+                android:gravity="center"
+                />
+
+            <ImageButton
+                android:id="@+id/btnReloadApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_reload"
+                android:padding="10dp"
+                android:background="@drawable/circle_btn"
+                android:layout_gravity="end"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
